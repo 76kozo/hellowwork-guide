@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>障害当事者のためのハローワーク求職登録ガイド</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" role="banner">
+      <div class="container flex justify-between items-center py-16">
+        <h1 class="site-title">障害当事者のためのハローワーク求職登録ガイド</h1>
+        <button
+          class="btn btn--secondary btn--sm nav-toggle"
+          id="navToggle"
+          aria-label="メニューを開く"
+          aria-expanded="false"
+          aria-controls="primaryNav"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav id="primaryNav" class="primary-nav" aria-label="セクションナビゲーション" role="navigation">
+          <ul class="nav-list flex gap-16" role="list">
+            <li role="listitem"><a href="#introduction">はじめに</a></li>
+            <li role="listitem"><a href="#service-overview">サービス概要</a></li>
+            <li role="listitem"><a href="#preparation">事前準備</a></li>
+            <li role="listitem"><a href="#registration-steps">登録ステップ</a></li>
+            <li role="listitem"><a href="#office-visit">窓口手続き</a></li>
+            <li role="listitem"><a href="#mypage-usage">マイページ活用</a></li>
+            <li role="listitem"><a href="#privacy-settings">プライバシー</a></li>
+            <li role="listitem"><a href="#faq">FAQ</a></li>
+            <li role="listitem"><a href="#summary">まとめ</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container main-content py-16" role="main">
+      <section id="introduction" class="section" aria-labelledby="introduction-heading">
+        <h2 id="introduction-heading">はじめに</h2>
+        <p>
+          障害のある求職者がハローワークのオンラインサービスを活用すると、自宅のパソコンやスマートフォンから簡単に求人検索・応募・相談ができます。本ガイドでは、公式マニュアルの要点を視覚的なスクリーンショットとともに整理し、「何をどの画面で入力すればよいか」「公開・非公開をどう決めるか」「窓口で追加サポートを受けるにはどうすればよいか」を順を追って解説します。
+        </p>
+        <div class="mt-8">
+          <a href="https://www.hellowork.mhlw.go.jp/member/sy_mem_inputmethod.html" 
+             class="btn btn--primary btn--lg" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-describedby="registration-link-description">
+            今すぐ求職登録を始める
+            <span aria-hidden="true"> →</span>
+          </a>
+          <p id="registration-link-description" class="sr-only">
+            ハローワーク公式サイトの求職者登録ページに移動します（新しいウィンドウで開きます）
+          </p>
+        </div>
+      </section>
+
+      <section id="service-overview" class="section" aria-labelledby="service-overview-heading">
+        <h2 id="service-overview-heading">ハローワークインターネットサービスとは</h2>
+        <p>
+          ハローワークインターネットサービスは、求職者マイページを開設することで「求人検索」「オンライン自主応募」「ハローワークからの紹介状確認」などの機能を24時間利用できる総合サイトです。障害者専門窓口と同じく、障害特性に応じた就労支援チームやジョブコーチとの連携も受けられます。
+        </p>
+        <h3>障害当事者がオンライン登録を選ぶメリット</h3>
+        <ul>
+          <li>自宅で落ち着いて入力できるため、時間的・精神的な負担を軽減できる</li>
+          <li>必須項目をあらかじめ入力しておくと、来所時の手続き時間が短縮される</li>
+          <li>求職情報を公開すると、企業から直接リクエストを受けるチャンスが広がる</li>
+        </ul>
+        <div class="mt-8">
+          <a href="https://www.hellowork.mhlw.go.jp/member/sy_mem_inputmethod.html" 
+             class="btn btn--outline" 
+             target="_blank" 
+             rel="noopener noreferrer">
+            登録手続きを開始
+            <span aria-hidden="true"> ↗</span>
+          </a>
+        </div>
+      </section>
+
+      <section id="preparation" class="section" aria-labelledby="preparation-heading">
+        <h2 id="preparation-heading">事前準備：登録前に揃えておくもの</h2>
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">必須／任意</th>
+                <th scope="col">内容</th>
+                <th scope="col">補足</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>必須</td><td>有効なメールアドレス</td><td>認証キー受信とマイページログインに使用</td></tr>
+              <tr><td>必須</td><td>障害者手帳・診断書など</td><td>来所相談時に確認されるため写しを準備</td></tr>
+              <tr><td>任意</td><td>マイナンバーカード</td><td>対応ブラウザなら基本情報が自動入力される</td></tr>
+              <tr><td>任意</td><td>履歴書・職務経歴メモ</td><td>職歴欄への転記を簡単にするため</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="registration-steps" class="section" aria-labelledby="registration-steps-heading">
+        <h2 id="registration-steps-heading">オンラインでの求職登録ステップ</h2>
+
+        <!-- STEP 1 -->
+        <article class="card mb-8">
+          <div class="card__body">
+            <h3><span class="step-label">STEP 1</span> アカウント（メール）の仮登録</h3>
+            <ol>
+              <li>トップページで「マイページを開設して求職申込み」をクリック</li>
+              <li>利用規約を確認後、メールアドレスとパスワードを登録すると認証キーが送信される</li>
+            </ol>
+          </div>
+        </article>
+
+        <!-- STEP 2 -->
+        <article class="card mb-8">
+          <div class="card__body">
+            <h3><span class="step-label">STEP 2</span> 14日以内に求職情報を入力</h3>
+            <p>画面は８章構成です。必須項目は赤で表示され、入力漏れがあると次へ進めません。</p>
+            <div class="table-wrapper mb-8">
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">章番号</th>
+                    <th scope="col">主な入力内容</th>
+                    <th scope="col">障害者向け注意点</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr><td>1</td><td>基本情報：氏名・住所・連絡先</td><td>「障害あり」を選択すると第7章が表示</td></tr>
+                  <tr><td>2</td><td>求職情報提供等：公開／提供の可否</td><td>企業へ公開する範囲を慎重に選択</td></tr>
+                  <tr><td>3</td><td>希望職種・時間等：職種５件まで・勤務形態</td><td>「パート」を選ぶと週日数も入力</td></tr>
+                  <tr><td>4</td><td>希望勤務地・賃金：都道府県10件まで</td><td>在宅勤務希望もここで指定</td></tr>
+                  <tr><td>5</td><td>学歴／資格：免許・資格５件まで</td><td>資格がリストにない場合は「その他」欄</td></tr>
+                  <tr><td>6</td><td>経歴：主な職歴を新しい順</td><td>数値実績を書くと企業に伝わりやすい</td></tr>
+                  <tr><td>7</td><td>障害情報：障害種別・配慮事項</td><td>手帳等級・補助具・配慮希望を具体的に</td></tr>
+                  <tr><td>8</td><td>自己PR：特技・アピール</td><td>公開欄チェックで企業に表示</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <h4>障害情報入力のコツ</h4>
+            <ul>
+              <li>「配慮してほしいこと」を具体的な場面で書く（例：長時間の立ち仕事が難しいため座位作業希望）</li>
+              <li>既に職業評価を受けた場合は実施機関と日付を記載すると理解が早い</li>
+              <li>すべて非公開にしても障害者枠で登録している事実は企業に表示される点に注意</li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- STEP 3 -->
+        <article class="card mb-8">
+          <div class="card__body">
+            <h3><span class="step-label">STEP 3</span> 一時保存と完了</h3>
+            <p>
+              途中で休憩する場合は「一時保存」を押し、再開時に同じ画面から続行します。ただし前画面に戻って保存すると後続章のデータが消えるため、必ず最後まで進んでから保存し直してください。完了ボタンを押すとオンライン登録が完了し「オンライン登録者」と表示されます。
+            </p>
+            <div class="mt-8">
+              <a href="https://www.hellowork.mhlw.go.jp/member/sy_mem_inputmethod.html" 
+                 class="btn btn--primary" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                実際に登録する
+                <span aria-hidden="true"> →</span>
+              </a>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <section id="office-visit" class="section" aria-labelledby="office-visit-heading">
+        <h2 id="office-visit-heading">窓口で「利用登録者」になる方法</h2>
+        <p>オンライン登録後に最寄りハローワークへ行き、以下の流れで手続きを行います。</p>
+        <ol>
+          <li>受付で「オンライン登録済・障害者相談希望」と伝える</li>
+          <li>障害者専門窓口で担当者と面談し、入力内容を確認</li>
+          <li>相談完了後に求職区分が「利用登録者」に切り替わり、紹介状発行や失業給付手続きが利用できるようになる</li>
+        </ol>
+        <p class="status status--info mt-8">障害手帳が未交付でも利用可能ですが、診断書などの確認書類を持参すると支援がスムーズです。</p>
+      </section>
+
+      <section id="mypage-usage" class="section" aria-labelledby="mypage-usage-heading">
+        <h2 id="mypage-usage-heading">求職者マイページの活用術</h2>
+        <p>
+          求職者マイページにログインすると、未読メッセージや保存した検索条件がひと目で確認できます。検索条件は３件まで保存でき、ボタン一つで最新求人を再検索できるため、毎日のチェックが楽になります。
+        </p>
+        <h3>情報公開後の「直接リクエスト」対応</h3>
+        <ul>
+          <li>企業からメッセージが届いたら、仕事内容・配慮内容を確認し、応募可否を返信</li>
+          <li>オンライン自主応募は失業給付の再就職手当対象外となるため、給付を受けたい場合はハローワーク紹介状を通す</li>
+        </ul>
+      </section>
+
+      <section id="privacy-settings" class="section" aria-labelledby="privacy-settings-heading">
+        <h2 id="privacy-settings-heading">プライバシーと公開設定</h2>
+        <p>
+          障害種別や等級は公開・非公開を細かく設定できますが、以下の４項目は必ず公開されます。
+        </p>
+        <ul>
+          <li>希望する仕事</li>
+          <li>希望勤務地</li>
+          <li>学歴</li>
+          <li>免許・資格</li>
+        </ul>
+        <p class="status status--warning mt-8">
+          公開範囲を最小限にしたい場合は、氏名や前職の社名を入力しない、自由記述欄で個人が特定される情報を書かないなどの工夫が必要です。
+        </p>
+      </section>
+
+      <section id="faq" class="section" aria-labelledby="faq-heading">
+        <h2 id="faq-heading">よくある質問</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>オンライン登録だけで企業に応募できますか</summary>
+            <p>自主応募求人には応募可能ですが、紹介状が必要な求人は利用登録後に窓口で手続きが必要です。</p>
+          </details>
+          <details class="faq-item">
+            <summary>手帳がなくても障害者専門窓口を使えますか</summary>
+            <p>手帳がなくても相談可能ですが、配慮内容の説明や診断書の提示を求められる場合があります。</p>
+          </details>
+          <details class="faq-item">
+            <summary>マイナンバーカード連携がうまく動かない</summary>
+            <p>対応ブラウザはAndroid Chrome / iOS Safariのみ。未対応機種は手入力してください。</p>
+          </details>
+          <details class="faq-item">
+            <summary>公開後に非公開へ戻せますか</summary>
+            <p>マイページの「求職者情報・設定」からいつでも変更できます。変更後は即時反映されます。</p>
+          </details>
+        </div>
+      </section>
+
+      <section id="summary" class="section" aria-labelledby="summary-heading">
+        <h2 id="summary-heading">まとめと次のステップ</h2>
+        <p>
+          ハローワークのオンライン求職登録は、障害当事者が自分のペースで情報を整理し、適切な支援につなげる第一歩です。
+        </p>
+        <ol>
+          <li>メールアドレスで仮登録し、14日以内に求職情報を入力</li>
+          <li>障害情報と配慮事項を具体的に記載し、公開範囲を慎重に設定</li>
+          <li>窓口相談で「利用登録者」へ格上げし、紹介状やジョブコーチ支援を活用</li>
+        </ol>
+        <p class="mt-8">
+          これらを押さえれば、応募先とのマッチング精度が高まり、就労後の定着支援も受けやすくなります。ぜひ本ガイドを参照しながら、安心してオンライン登録を進めてください。
+        </p>
+        <div class="mt-8">
+          <a href="https://www.hellowork.mhlw.go.jp/member/sy_mem_inputmethod.html" 
+             class="btn btn--primary btn--lg btn--full-width" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             aria-describedby="final-registration-description">
+            <strong>ハローワーク求職登録を開始する</strong>
+            <span aria-hidden="true"> →</span>
+          </a>
+          <p id="final-registration-description" class="text-center mt-8" style="font-size: var(--font-size-sm); color: var(--color-text-secondary);">
+            ※ ハローワーク公式サイトに移動します。このガイドの内容を参考に安心して登録を進めてください。
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <div class="floating-actions">
+      <a href="https://www.hellowork.mhlw.go.jp/member/sy_mem_inputmethod.html" 
+         class="btn btn--primary floating-register" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         aria-label="ハローワーク求職登録ページを開く">
+        登録
+      </a>
+      <button id="backToTop" class="btn btn--primary back-to-top" aria-label="ページトップへ戻る">
+        ↑
+      </button>
+    </div>
+
+    <footer class="site-footer py-16" role="contentinfo">
+      <div class="container text-center">
+        <p>&copy; 2025 障害当事者のためのハローワーク求職登録ガイド</p>
+      </div>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
